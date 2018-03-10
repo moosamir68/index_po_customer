@@ -1,0 +1,168 @@
+/* 
+  Localizable.strings
+  add
+
+  Created by Moosa Mir on 12/23/17.
+  Copyright © 2017 Noxel. All rights reserved.
+*/
+
+"Cancel" = "Cancel";
+"Not gurantee" = "Not gurantee";
+"Fetching Data..." = "Fetching Data...";
+"Select SubCategory for Special Offer" = "Select SubCategory for Special Offer";
+"Empty Sub Category" = "Empty Sub Category";
+"Select Product for Special Offer" = "Select Product for Special Offer";
+"Empty Product" = "Empty Product";
+"Add" = "Add";
+"Update" = "Update";
+"Sucessfuly update" = "Sucessfuly update";
+"Please insert price" = "Please insert price";
+"Please insert garauntee name" = "Please insert garauntee name";
+"Please insert description" = "Please insert description";
+"Empty Requests" = "Empty Requests";
+"Count" = "Count";
+"Offer your price" = "Offer your price";
+"Hezar Toman" = "Hezar Toman";
+"Insert More Description" = "Insert More Description";
+"Done" = "Done";
+"Successfuly replyed" = "Successfuly replyed";
+"Please Complete Price" = "Please Complete Price";
+"Seller Name:" = "Seller Name:";
+"Seller Phone:" = "Seller Phone:";
+"Seller Telegram ID:" = "Seller Telegram ID:";
+"Shop Name:" = "Shop Name:";
+"Shop Phone Number:" = "Shop Phone Number:";
+"Shop Address:" = "Shop Address:";
+"Change SubCategory" = "Change SubCategory";
+"Change Language" = "تغییر زبان";
+"Exit" = "Exit";
+"Are you sure to exit" = "Are you sure to exit";
+"Register..." = "Register...";
+"Add to faverties" = "Add to faverties";
+"Archive" = "Archive";
+"Empty Archive" = "Empty Archive";
+"Enter Time" = "Enter Time";
+"Enter Price" = "Enter Price";
+"Successfuly added" = "Successfuly added";
+"Please enter time" = "Please enter time";
+"Please enter price" = "Please enter price";
+"Cancel Offer" = "Cancel Offer";
+"Increase Time" = "Increase Time";
+"Price:" = "Price:";
+"Toman" = "Toman";
+"Price Esential:" = "Price Esential:";
+"Product Name:" = "Product Name:";
+"Are you shure cancel offer?" = "Are you shure cancel offer?";
+"Successfuly Updated" = "Successfuly Updated";
+"Which of the following products are you selling?" = "Which of the following products are you selling?";
+"Back" = "Back";
+"Please select a category" = "Please select a category";
+"Select sub-categories supported" = "Select sub-categories supported";
+"Please select subcategory" = "Please select subcategory";
+"Please Enter Phone Number" = "Please Enter Phone Number";
+"Please enter phone number" = "Please enter phone number";
+"Enter Recived Code" = "Enter Recived Code";
+"Change Phone Number" = "Change Phone Number";
+"Select avatar Image" = "Select avatar Image";
+"First Name" = "First Name";
+"Last Name" = "Last Name";
+"ID Telegram" = "ID Telegram";
+"Phone Number" = "Phone Number";
+"Please complete first name" = "Please complete first name";
+"Please complete Last name" = "Please complete Last name";
+"Please complete ID Telegram" = "Please complete ID Telegram";
+"Please select avatar" = "Please select avatar";
+"Select license image" = "Select license image";
+"Shop Name" = "Shop Name";
+"Shop Phone" = "Shop Phone";
+"Shop Address" = "Shop Address";
+"Please complete shop name" = "Please complete shop name";
+"Please complete shop phone" = "Please complete shop phone";
+"Please complete shop address" = "Please complete shop address";
+"Please select license image" = "Please select license image";
+"Error" = "Error";
+"Register" = "Register";
+"Requests" = "Requests";
+"Products" = "Products";
+"Profile" = "Profile";
+"Special Offer" = "Special Offer";
+"Products" = "Products";
+"OK" = "OK";
+
+"Information" = "Information";
+"Exist" = "Exist";
+"Price:" = "Price:";
+"Expire Date:" = "Expire Date:";
+"Select" = "Select";
+"Garauntee" = "Garauntee";
+"Color:" = "Color:";
+"Select" = "Select";
+"Description:" = "Description:";
+
+"Key Word" = "Key Word";
+
+"Count:" = "Count:";
+"Descrpition:" = "Descrpition:";
+"Count Replyed:" = "Count Replyed:";
+"Minimum price replyed:" = "Minimum price replyed:";
+"Send Reply" = "Send Reply";
+"Insert Price(Toman)" = "Insert Price(Toman)";
+"Insert More Description" = "Insert More Description";
+"Report Abuse" = "Report Abuse";
+"Please Complete Description" = "Please Complete Description";
+
+"Type Report" = "Type Report";
+"Send Report" = "Send Report";
+"Image not valid" = "Image not valid";
+"Content not valid" = "Content not valid";
+"Please select type report" = "Please select type report";
+"Please insert description" = "Please insert description";
+"Enter Description" = "Enter Description";
+
+"English" = "English";
+"Persian" = "فارسی";
+
+"Red" = "Red";
+"Blue" = "Blue";
+"Black" = "Black";
+"White" = "White";
+"Yellow" = "Yellow";
+"Gray" = "Gray";
+"Gold" = "Gold";
+", " = ", ";
+"Select Date" = "Select Date";
+"Please Select Valid Date" = "Please Select Valid Date";
+"Garauntee:" = "Garauntee:";
+"Yes" = "Yes";
+"No" = "No";
+"Both" = "Both";
+"Garauntee Name:" = "Garauntee Name:";
+"Price with garauntee:" = "Price with garauntee:";
+"Price without garauntee:" = "Price without garauntee:";
+
+"," = ",";
+
+"Less than one other day is valid" = "Less than one other day is valid";
+
+"Searching..." = "Searching...";
+
+"Time Out Price:" = "Time Out Price:";
+
+"Please Select Color" = "Please Select Color";
+"Please insert warranty name" = "Please insert warranty name";
+"Please insert warranty price" = "Please insert warranty price";
+"Please insert price" = "Please insert price";
+"Please insert warranty price" ="Please insert warranty price";
+"Please select warranty" = "Please select warranty";
+"Please select time out price" = "Please select time out price";
+
+"Sucessfuly added" = "Sucessfuly added";
+"Delete" = "Delete";
+"Delete Product" = "Delete Product";
+"Are you sure delete this product" = "Are you sure delete this product";
+"Logout..." = "Logout...";
+"Sucessfuly updated" = "Sucessfuly updated";
+"Sucessfuly Deleted" = "Sucessfuly Deleted";
+"s expire needed update price" = "s expire needed update price";
+
+"Expire Date Price:" = "Expire Date Price:";

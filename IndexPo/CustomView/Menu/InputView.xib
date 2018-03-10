@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputView" customModule="iOSShopBase" customModuleProvider="target">
+            <connections>
+                <outlet property="boxView" destination="xGA-hg-1pr" id="Ujd-5u-zF4"/>
+                <outlet property="containerView" destination="TEo-e7-SBY" id="OW5-PP-o1Z"/>
+                <outlet property="textField" destination="VAG-7c-WdW" id="ESk-hT-a4m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="101"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGA-hg-1pr">
+                    <rect key="frame" x="0.0" y="0.0" width="357" height="101"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEo-e7-SBY">
+                            <rect key="frame" x="8" y="8" width="341" height="93"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VAG-7c-WdW">
+                                    <rect key="frame" x="8" y="4" width="325" height="85"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="VAG-7c-WdW" secondAttribute="bottom" constant="4" id="NeA-7X-H1j"/>
+                                <constraint firstItem="VAG-7c-WdW" firstAttribute="leading" secondItem="TEo-e7-SBY" secondAttribute="leading" constant="8" id="PUp-CX-SBO"/>
+                                <constraint firstItem="VAG-7c-WdW" firstAttribute="top" secondItem="TEo-e7-SBY" secondAttribute="top" constant="4" id="XRx-0r-hCI"/>
+                                <constraint firstAttribute="trailing" secondItem="VAG-7c-WdW" secondAttribute="trailing" constant="8" id="aGU-xc-qW0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="TEo-e7-SBY" firstAttribute="leading" secondItem="xGA-hg-1pr" secondAttribute="leading" constant="8" id="LMf-ED-i69"/>
+                        <constraint firstItem="TEo-e7-SBY" firstAttribute="top" secondItem="xGA-hg-1pr" secondAttribute="top" constant="8" id="bKC-yP-TkP"/>
+                        <constraint firstAttribute="bottom" secondItem="TEo-e7-SBY" secondAttribute="bottom" id="oBL-qv-OHh"/>
+                        <constraint firstAttribute="trailing" secondItem="TEo-e7-SBY" secondAttribute="trailing" constant="8" id="yf8-wf-RfI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xGA-hg-1pr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="90d-Ex-US1"/>
+                <constraint firstAttribute="bottom" secondItem="xGA-hg-1pr" secondAttribute="bottom" id="QTH-tB-2kH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xGA-hg-1pr" secondAttribute="trailing" id="o4R-B9-dxd"/>
+                <constraint firstItem="xGA-hg-1pr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tSB-JH-Ivk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-142.5" y="173.5"/>
+        </view>
+    </objects>
+</document>

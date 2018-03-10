@@ -1,0 +1,168 @@
+/* 
+  Localizable.strings
+  add
+
+  Created by Moosa Mir on 12/23/17.
+  Copyright © 2017 Noxel. All rights reserved.
+*/
+
+"Cancel" = "لغو";
+"Not gurantee" = "بدون گارانتی";
+"Fetching Data..." = "دریافت اطلاعات...";
+"Select SubCategory for Special Offer" = "انتخاب زیر مجموعه برای پیشنهاد ویژه";
+"Empty Sub Category" = "خالی بودن زیر مجموعه";
+"Select Product for Special Offer" = "انتخاب محصول برای پیشنهاد ویژه";
+"Empty Product" = "محصولی وجود ندارد";
+"Add" = "افزودن";
+"Update" = "بروزرسانی";
+"Sucessfuly update" = "بروزرسانی موفقیت آمیز";
+"Please insert price" = "لطفا قیمت را وارد کنید";
+"Please insert garauntee name" = "لطفا نام گارانتی را وارد کنید";
+"Please insert description" = "لطفا توضیحات برای محصول را وارد کنید";
+"Empty Requests" = "درخواستی وجود ندارد";
+"Count" = "تعداد";
+"Offer your price" = "قیمت پیشنهاد ویژه";
+"Hezar Toman" = "هزار تومن";
+"Insert More Description" = "افزودن توضیحات بیشتر";
+"Done" = "تایید";
+"Successfuly replyed" = "پاسخ موفقیت آمیز";
+"Please Complete Price" = "لطفا قیمت را کامل کنید";
+"Seller Name:" = "نام فروشنده:";
+"Seller Phone:" = "شماره تلفن فروشنده:";
+"Seller Telegram ID:" = "تلگران فروشنده:";
+"Shop Name:" = "نام مغازه:";
+"Shop Phone Number:" = "شماره تلفن مغازه:";
+"Shop Address:" = "آدرس مغازه:";
+"Change SubCategory" = "تغییر زیر مجموعه";
+"Change Language" = "Change Language";
+"Exit" = "خروج از حساب کاربری";
+"Are you sure to exit" = "ایا می‌خواهید خارج شوید؟";
+"Register..." = "ثبت نام...";
+"Add to faverties" = "پیشنهاد ویژه جدید";
+"Archive" = "سابقه";
+"Empty Archive" = "سابقه ای وجود ندارد";
+"Enter Time" = "زمان را وارد کنید";
+"Enter Price" = "قیمت را وارد کنید";
+"Successfuly added" = "افزودن موفقیت آمیز";
+"Please enter time" = "لطفا زمان را وارد نمایید";
+"Please enter price" = "لطفا قیمت را وارد کنید";
+"Cancel Offer" = "لغو پیشنهاد ویژه";
+"Increase Time" = "افزایش زمان";
+"Price:" = "قیمت:";
+"Toman" = "تومان";
+"Price Esential:" = "قیمت اصلی:";
+"Product Name:" = "نام محصول:";
+"Are you shure cancel offer?" = "ایا واقعا می‌خواهید این پیشنهاد را لغو کنید؟";
+"Successfuly Updated" = "بروزرسانی موفقیت آمیز";
+"Which of the following products are you selling?" = "کدام یک از زیر مجوعه ها را به فروش میرسانید؟";
+"Back" = "بازگشت؟";
+"Please select a category" = "لطفا یک دسته بندی را انتخاب کنید";
+"Select sub-categories supported" = "زیر مجوعه را انتخاب کنید";
+"Please select subcategory" = "لطفا زیر مجموعه را انتخاب کنید";
+"Please Enter Phone Number" = "لطفا شماره تلفن را وارد کنید";
+"Please enter phone number" = "لطفا شماره تلفن را وارد کنید";
+"Enter Recived Code" = "کد دریافتی را وارد کنید";
+"Change Phone Number" = "تغیر شماره تلفن";
+"Select avatar Image" = "انتخاب عکس پروفایل";
+"First Name" = "نام";
+"Last Name" = "نام خانوادگی";
+"ID Telegram" = "آدرس تلگرام";
+"Phone Number" = "شماره تلفن";
+"Please complete first name" = "لطفا نام را کامل کنید";
+"Please complete Last name" = "لطفا فامیلی را کامل کنید";
+"Please complete ID Telegram" = "لطفا ادرس تلکرام را وارد کنید";
+"Please select avatar" = "لطفا عکس پروفایل را انتخاب کنید";
+"Select license image" = "انتخاب عکس پروانه کسب";
+"Shop Name" = "نام مغازه";
+"Shop Phone" = "شماره تلفن مغازه";
+"Shop Address" = "آدرس مغازه";
+"Please complete shop name" = "لطفا نام مغازه را کامل کنید";
+"Please complete shop phone" = "لطفا شماره تلفن مغازه را کامل کنید";
+"Please complete shop address" = "لطفا آدرس مغزاه را کامل کنید";
+"Please select license image" = "لطفا عکس پروانه کسب را کامل کنید";
+"Error" = "ارور";
+"Register" = "ثبت‌ نام";
+"Requests" = "درخواست‌ها";
+"Products" = "محصولات";
+"Profile" = "کابر";
+"Special Offer" = "پیشنهادهای ویژه";
+"OK" = "تایید";
+
+"Information" = "اطلاعات تکمیلی";
+"Exist" = "موجود";
+"Price:" = "قیمت:";
+"Expire Date:" = "معتبر تا تاریخ:";
+"Select" = "انتخاب";
+"Garauntee" = "گارانتی";
+"Color:" = "رنگ:";
+"Select" = "انتخاب";
+"Description:" = "توضیحات:";
+
+"Key Word" = "کلمه کلیدی";
+
+"Count:" = "تعداد:";
+"Descrpition:" = "توضیحات:";
+"Count Replyed:" = "تعداد پیشنهادهای ثبت شده:";
+"Minimum price replyed:" = "حداقل قیمت ثبت شده:";
+"Send Reply" = "ارسال پیشنهاد";
+"Insert Price(Toman)" = "وارد کردن قیمت(تومان)";
+"Insert More Description" = "وارد کردن توضیحات بیشتر";
+"Report Abuse" = "گزارش تخلف";
+"Please Complete Description" = "لطفا توضیحات را کامل کنید";
+
+"Type Report" = "نوع گزارش";
+"Send Report" = "ارسال گزارش";
+"Image not valid" = "تصویر نامناسب";
+"Content not valid" = "محتوا نامناسب";
+"Please select type report" = "لطفا نوع گزارش را انتخاب کنید";
+"Please insert description" = "لطفا توضیحات را کامل کنید";
+"Enter Description" = "توضیحات را وارد کنید";
+
+"English" = "English";
+"Persian" = "فارسی";
+
+"Red" = "قرمز";
+"Blue" = "ابی";
+"Black" = "مشکی";
+"White" = "سفید";
+"Yellow" = "زرد";
+"Gray" = "خاکستری";
+"Gold" = "طلایی";
+", " = "، ";
+
+"Select Date" = "انتخاب تاریخ";
+"Please Select Valid Date" = "لطفا تاریخ معتبری را انتخاب کنید";
+"Garauntee:" = "گارانتی:";
+"Yes" = "دارد";
+"No" = "ندارد";
+"Both" = "هردو";
+"Garauntee Name:" = "نام گارانتی:";
+"Price with garauntee:" = "قیمت با گارانتی:";
+"Price without garauntee:" = "قیمت بدون گارانتی:";
+
+"," = ",";
+
+"Less than one other day is valid" = "کمتر از یک روز دیگر معتبر است";
+
+"Searching..." = "جستجو...";
+
+"Time Out Price:" = "بازه یادآوری قیمت:";
+
+"Please Select Color" = "لطفا رنگ را انتخاب کنید";
+"Please insert warranty name" = "لطفا نام گارانتی را وارد کنید";
+"Please insert warranty price" = "لطفا قیمت با گارانتی را وارد کنید";
+"Please insert price" = "لطفا قیمت را وارد کنید";
+"Please select warranty" = "لطفا نوع گارانتی را وارد کنید";
+"Please select time out price" = "لطفا بازه یاداوری قیمت را  انتخاب کنید";
+
+"Sucessfuly added" = "با موفقیت افزوده شد";
+
+"Delete" = "حذف";
+"Delete Product" = "حذف محصول";
+"Are you sure delete this product" = "ایا مطمئن هستید که می‌خواهید این محصول را از لیست محصولات خود حذف کنید؟";
+"Logout..." = "خروج...";
+"Sucessfuly updated" = "با موفقیت به روزرسانی شد";
+"Sucessfuly Deleted" = "با موفقیت حذف شد";
+"s expire needed update price" = "های نیازمند بروزرسانی قیمت";
+
+"Expire Date Price:" = "تاریخ اعتبار قیمت:";

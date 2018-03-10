@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SumbitPhoneNumberViewController" customModule="iOSShopBase" customModuleProvider="target">
+            <connections>
+                <outlet property="boxView" destination="aCB-Z6-Xfn" id="w8k-h0-oyY"/>
+                <outlet property="boxViewMarginBottom" destination="6W5-kX-vKM" id="TR0-Hd-24i"/>
+                <outlet property="doneButton" destination="iaU-F9-MYA" id="xSz-oj-WFx"/>
+                <outlet property="logoImageView" destination="UVf-zj-I7g" id="osJ-Lt-4R6"/>
+                <outlet property="phoneNumberBoxView" destination="51k-VA-laa" id="AHP-oU-yp8"/>
+                <outlet property="phoneNumberTextField" destination="noL-KJ-i1E" id="HBO-wZ-ctQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCB-Z6-Xfn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-zj-I7g">
+                            <rect key="frame" x="52" y="95" width="271" height="180.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="UVf-zj-I7g" secondAttribute="height" multiplier="3:2" id="MeQ-Al-nRj"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaU-F9-MYA">
+                            <rect key="frame" x="139" y="375.5" width="96" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="eKt-n5-Pio"/>
+                                <constraint firstAttribute="width" constant="96" id="gS6-qd-dVK"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="userDidTapOnDoneButton:" destination="-1" eventType="touchUpInside" id="et7-J3-Y8a"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51k-VA-laa">
+                            <rect key="frame" x="8" y="307.5" width="359" height="52"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Plase enter phone number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noL-KJ-i1E">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="52"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="noL-KJ-i1E" secondAttribute="trailing" id="7Cd-p3-0JL"/>
+                                <constraint firstItem="noL-KJ-i1E" firstAttribute="leading" secondItem="51k-VA-laa" secondAttribute="leading" id="81r-eL-Nwx"/>
+                                <constraint firstAttribute="bottom" secondItem="noL-KJ-i1E" secondAttribute="bottom" id="RBE-5Y-wCV"/>
+                                <constraint firstItem="noL-KJ-i1E" firstAttribute="top" secondItem="51k-VA-laa" secondAttribute="top" id="Yiy-00-vEs"/>
+                                <constraint firstAttribute="height" constant="52" id="yAX-yb-NvE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="51k-VA-laa" firstAttribute="top" secondItem="UVf-zj-I7g" secondAttribute="bottom" constant="32" id="1IA-sc-46C"/>
+                        <constraint firstAttribute="trailing" secondItem="UVf-zj-I7g" secondAttribute="trailing" constant="52" id="2tF-lt-5CS"/>
+                        <constraint firstItem="51k-VA-laa" firstAttribute="leading" secondItem="aCB-Z6-Xfn" secondAttribute="leading" constant="8" id="FgW-ap-Vyf"/>
+                        <constraint firstAttribute="trailing" secondItem="51k-VA-laa" secondAttribute="trailing" constant="8" id="Gax-ID-Zh8"/>
+                        <constraint firstItem="UVf-zj-I7g" firstAttribute="leading" secondItem="aCB-Z6-Xfn" secondAttribute="leading" constant="52" id="YnK-yw-hdh"/>
+                        <constraint firstItem="iaU-F9-MYA" firstAttribute="centerX" secondItem="aCB-Z6-Xfn" secondAttribute="centerX" id="a8q-3C-hUX"/>
+                        <constraint firstItem="51k-VA-laa" firstAttribute="centerX" secondItem="aCB-Z6-Xfn" secondAttribute="centerX" id="b3W-Rd-ia0"/>
+                        <constraint firstItem="iaU-F9-MYA" firstAttribute="top" secondItem="51k-VA-laa" secondAttribute="bottom" constant="16" id="xbW-qk-kpm"/>
+                        <constraint firstItem="51k-VA-laa" firstAttribute="centerY" secondItem="aCB-Z6-Xfn" secondAttribute="centerY" id="xpf-ra-GEX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aCB-Z6-Xfn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2Et-Kg-mcx"/>
+                <constraint firstItem="aCB-Z6-Xfn" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="6W5-kX-vKM"/>
+                <constraint firstItem="aCB-Z6-Xfn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lto-47-BgE"/>
+                <constraint firstItem="aCB-Z6-Xfn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nXr-Zl-KwQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="1500" height="606"/>
+    </resources>
+</document>

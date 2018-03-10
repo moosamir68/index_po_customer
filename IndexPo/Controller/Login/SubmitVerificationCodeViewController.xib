@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubmitVerificationCodeViewController" customModule="iOSShopBase" customModuleProvider="target">
+            <connections>
+                <outlet property="boxView" destination="1nQ-bY-s9H" id="XOQ-sr-tfq"/>
+                <outlet property="boxViewMarginBottom" destination="FoA-8J-d92" id="rj0-sM-xmC"/>
+                <outlet property="changePhoneNumberButton" destination="Gjd-9Z-RiN" id="58i-UO-36X"/>
+                <outlet property="doneButton" destination="wVg-xs-o16" id="l8v-bL-pOg"/>
+                <outlet property="inputCodeBoxView" destination="wm4-4V-CLM" id="qc1-yv-uB3"/>
+                <outlet property="inputCodeTextFeild" destination="mu9-kr-3IW" id="7pW-pp-Gec"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nQ-bY-s9H">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-xs-o16">
+                            <rect key="frame" x="139" y="375.5" width="96" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="96" id="RhT-uc-ufZ"/>
+                                <constraint firstAttribute="height" constant="40" id="frW-le-Vtp"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="userDidTapOnDoneButton:" destination="-1" eventType="touchUpInside" id="Ues-YG-SyV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjd-9Z-RiN">
+                            <rect key="frame" x="107" y="619" width="160" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BlM-CA-YHr"/>
+                                <constraint firstAttribute="width" constant="160" id="Sly-mT-QCA"/>
+                            </constraints>
+                            <state key="normal" title="Change Phone Number"/>
+                            <connections>
+                                <action selector="userDidTapOnChangePhoenNumber:" destination="-1" eventType="touchUpInside" id="Zud-L6-y69"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wm4-4V-CLM">
+                            <rect key="frame" x="8" y="307.5" width="359" height="52"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mu9-kr-3IW">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="52"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="mu9-kr-3IW" firstAttribute="top" secondItem="wm4-4V-CLM" secondAttribute="top" id="6xN-U6-HFR"/>
+                                <constraint firstAttribute="trailing" secondItem="mu9-kr-3IW" secondAttribute="trailing" id="YOS-K1-FJR"/>
+                                <constraint firstAttribute="height" constant="52" id="dD7-ZW-m5A"/>
+                                <constraint firstItem="mu9-kr-3IW" firstAttribute="leading" secondItem="wm4-4V-CLM" secondAttribute="leading" id="eKs-PI-N3C"/>
+                                <constraint firstAttribute="bottom" secondItem="mu9-kr-3IW" secondAttribute="bottom" id="qAO-3t-bTa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wm4-4V-CLM" firstAttribute="centerX" secondItem="1nQ-bY-s9H" secondAttribute="centerX" id="1Re-td-emc"/>
+                        <constraint firstAttribute="bottom" secondItem="Gjd-9Z-RiN" secondAttribute="bottom" constant="8" id="2na-WD-hth"/>
+                        <constraint firstItem="wm4-4V-CLM" firstAttribute="leading" secondItem="1nQ-bY-s9H" secondAttribute="leading" constant="8" id="6DA-di-m16"/>
+                        <constraint firstItem="Gjd-9Z-RiN" firstAttribute="centerX" secondItem="1nQ-bY-s9H" secondAttribute="centerX" id="Tjl-Ux-xat"/>
+                        <constraint firstItem="wm4-4V-CLM" firstAttribute="centerY" secondItem="1nQ-bY-s9H" secondAttribute="centerY" id="fpC-wZ-Lxt"/>
+                        <constraint firstItem="wVg-xs-o16" firstAttribute="centerX" secondItem="1nQ-bY-s9H" secondAttribute="centerX" id="lAG-QW-U2z"/>
+                        <constraint firstAttribute="trailing" secondItem="wm4-4V-CLM" secondAttribute="trailing" constant="8" id="qmX-88-XRL"/>
+                        <constraint firstItem="wVg-xs-o16" firstAttribute="top" secondItem="wm4-4V-CLM" secondAttribute="bottom" constant="16" id="tEx-gv-bjd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1nQ-bY-s9H" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="FoA-8J-d92"/>
+                <constraint firstItem="1nQ-bY-s9H" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="X6y-R8-wCx"/>
+                <constraint firstItem="1nQ-bY-s9H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hDV-L9-94Q"/>
+                <constraint firstItem="1nQ-bY-s9H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ufr-W2-d3M"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
