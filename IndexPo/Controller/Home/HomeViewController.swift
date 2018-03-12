@@ -12,7 +12,7 @@ protocol HomeDelegate {
 
 import UIKit
 
-class HomeViewController: MasterTableViewController {
+class HomeViewController: MasterTableViewController, ProductTableViewCellDelegate {
     
     var products:[Int:[Product]]{
         get {
@@ -41,8 +41,10 @@ class HomeViewController: MasterTableViewController {
     
     //Mark:- initUI
     internal override func initUI(){
-        self.tableView.register(UINib(nibName: identifireProductTableViewCell, bundle: nil), forCellReuseIdentifier: identifireProductTableViewCell)
-        self.heightForPerCellOnSections = [0:(124.0 as CGFloat)]
+        self.tableView.register(UINib(nibName: identifireProductTableViewCellVideo, bundle: nil), forCellReuseIdentifier: identifireProductTableViewCellVideo)
+        self.tableView.register(UINib(nibName: identifireProductTableViewCellImage, bundle: nil), forCellReuseIdentifier: identifireProductTableViewCellImage)
+        let height = UIScreen.main.bounds.size.width + 16 + 21 + 8 + 21 + 12 + 12 + 32 + 14
+        self.heightForPerCellOnSections = [0:(height as CGFloat)]
         super.initUI()
     }
     
@@ -67,12 +69,30 @@ class HomeViewController: MasterTableViewController {
             return errorCell
         }
         
-        let productCell = self.tableView.dequeueReusableCell(withIdentifier: identifireProductTableViewCell, for: indexPath) as! ProductTableViewCell
+        let productCell = self.tableView.dequeueReusableCell(withIdentifier: identifireProductTableViewCellImage, for: indexPath) as! ProductTableViewCellImage
         let product = self.products[indexPath.section]![indexPath.row]
+        productCell.delegate = self
         productCell.fillData(product: product)
         return productCell
     }
     
     //Mark:- internal method
+    
+    //MARK:- table view cell delegate
+    func userDidTapOnMore(on product: Product) {
+        
+    }
+    
+    func userDidTapOnFancy(on product: Product) {
+        
+    }
+    
+    func userDidTapOnBuyButton(on product: Product) {
+        
+    }
+    
+    func userDidTapOnImage(on product: Product) {
+        
+    }
 }
 

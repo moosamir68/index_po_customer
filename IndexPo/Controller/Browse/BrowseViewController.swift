@@ -6,7 +6,8 @@
 //  Copyright © 2018 Noxel. All rights reserved.
 //
 
-let identifireProductTableViewCell = "ProductTableViewCell"
+let identifireProductTableViewCellImage = "ProductTableViewCellImage"
+let identifireProductTableViewCellVideo = "ProductTableViewCellVideo"
 let identifireProductCollectionViewCell = "ProductCollectionViewCell"
 
 protocol BrowseDelegate {
@@ -15,19 +16,13 @@ protocol BrowseDelegate {
 
 import UIKit
 
-class BrowseViewController: MasterTableViewController {
+class BrowseViewController: MasterViewController {
 
-    var products: [Int:[Product]]{
-        get {
-            return self.items as! [Int:[Product]]
-        }
-        set {
-            self.items = newValue
-        }
-    }
+    @IBOutlet weak var mainScrollView: UIScrollView!
     
     var delegate:BrowseDelegate?
     var searchObject = SearchParameters()
+    var toolBarItems:[MainToolBar]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,46 +37,83 @@ class BrowseViewController: MasterTableViewController {
     
     //MARK:- initUI
     internal override func initUI(){
-        self.tableView.register(UINib(nibName: identifireProductTableViewCell, bundle: nil), forCellReuseIdentifier: identifireProductTableViewCell)
-        self.heightForPerCellOnSections = [0:(87.0 as CGFloat)]
         super.initUI()
+        self.mainScrollView.isPagingEnabled = true
     }
     
     //MARK:- get data
     internal override func getData() {
-        Service.sharedInstanse.browseProducts(searchObject: self.searchObject) { (products, error) in
-            if(products != nil){
-                let productsLocal:[Int:[Product]] = [0:products!]
-                self.products = productsLocal
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
+        Service.sharedInstanse.getToolBarMenuBrowse { (toolBarItems, error) in
+            DispatchQueue.main.async {
+                self.toolBarItems = toolBarItems
+                if(!self.checkIsEmptyData()){
+                    self.initToolbarWithItems()
                 }
             }
-            
         }
-    }
-    
-    //MARK:- taleview delegate
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if(self.checkIsEmptyDataSource()){
-            let errorCell = self.tableView.dequeueReusableCell(withIdentifier: identifireErrorTableViewCell, for: indexPath) as! ErrorTableViewCell
-            errorCell.fillData(title: self.errorDescription)
-            return errorCell
-        }
-        
-        let cartCell = self.tableView.dequeueReusableCell(withIdentifier: identifireProductTableViewCell, for: indexPath) as! ProductTableViewCell
-        let product = self.products[indexPath.section]![indexPath.row]
-        cartCell.fillData(product: product)
-        return cartCell
-    }
-    
-    //MARK:- parent method
-    override func userDidTapOnItem(select item: BaseObject) {
-        self.delegate?.showProductFromBrowse(from: self, itemSelected: item as! Product)
-        
     }
     
     //MARK:- internal method
+    private func initToolbarWithItems(){
+        self.mainScrollView.contentSize = CGSize(width: CGFloat((self.toolBarItems?.count)!) * self.boxView.frame.size.width, height: self.boxView.frame.size.height)
+        
+        for itemToolBar in self.toolBarItems!{
+            switch itemToolBar.type {
+            case 1:
+                let home = BrowseMainHomeViewController()
+                self.addChildViewController(home)
+                break
+            case 2:
+                let categories = BrowseMainCategoriesViewController()
+                self.addChildViewController(categories)
+                break
+            case 3:
+                let grid = BrowseMainGridViewController()
+                self.addChildViewController(grid)
+                break
+            case 4:
+                let collections = BrowseMainCollectionsViewController()
+                self.addChildViewController(collections)
+                break
+            case 5:
+                let gift = BrowseMainGiftViewController()
+                self.addChildViewController(gift)
+                break
+                
+            default:
+                return;
+            }
+        }
+    }
     
+    //MARK:- add controller to parent
+    private func addControllerToParentOnScrollView(controller:MasterViewController){
+        let currentChild:UIViewController? = self.childViewControllers.last
+        self.addChildViewController(controller)
+        self.mainScrollView.addSubview(controller.view)
+        controller.view.snp.makeConstraints { (make) in
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.width.equalToSuperview()
+            if(currentChild != nil){
+                make.left.equalTo((currentChild?.view.snp.trailing)!)
+            }else{
+                make.left.equalToSuperview()
+            }
+        }
+        
+        controller.willMove(toParentViewController: self)
+    }
     
+    private func addItemToToolBarMenu(toolBarItem:MainToolBar){
+        
+    }
+    
+    private func checkIsEmptyData() -> Bool{
+        if(self.toolBarItems == nil || self.toolBarItems?.count == 0){
+            return true
+        }
+        
+        return false
+    }
 }

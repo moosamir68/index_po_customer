@@ -55,11 +55,11 @@ class MasterTableViewController: UIViewController, UITableViewDelegate, UITableV
         self.view.backgroundColor = UIUtility.colorRootView()
         
         self.initUI()
-        self.getData()
     }
 
     //MARK:- initUI
     func initUI(){
+        self.tableView.separatorColor = .clear
         self.tableView.register(UINib(nibName: identifireErrorTableViewCell, bundle: nil), forCellReuseIdentifier: identifireErrorTableViewCell)
         
         let loadingView = DGElasticPullToRefreshLoadingViewCircle()

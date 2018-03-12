@@ -16,7 +16,7 @@ class HttpManager: NSObject {
         let request = MMRequest()
         
         //Esentials
-        request.baseURL = "136.243.149.242"
+        request.baseURL = "88.99.185.24"
         //Beta
 //        request.baseURL = "192.168.0.51:8000"
         request.protocoll = "http"

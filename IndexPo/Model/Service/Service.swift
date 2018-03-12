@@ -408,30 +408,17 @@ class Service: NSObject {
         }
     }
     
-    //MARK:- product
-    func browseProducts(searchObject:SearchParameters, callback:@escaping (_ products:[Product]?, _ error:MMError?) ->Void){
+    //MARK:- browse
+    func getToolBarMenuBrowse(callback:@escaping (_ items:[MainToolBar]?, _ error:MMError?) ->Void){
         let token = TokenManager().getToken()
         
         let request = httpRequest.createAPIRequestWithAccessToken(accessToken: token as NSString!)
         
-        request.path = "seller/product/"
+        request.baseURL = "www.mocky.io/v2"
+        request.path = "5aa6a11e3100005c3be71720"
         request.method = "GET"
         
-        request.queryParams?.setValue(searchObject.categoryId, forKey: "subCategory")
-        
         request.send { (response, error) in
-            
-            var products = [Product]()
-            for index in 1...5{
-                let product = Product()
-                product.price = index
-                product.name = String(format: "Product Name from Browse %d", index)
-                product.nameEn = String(format: "Product English Names %d", index)
-                products.append(product)
-            }
-            
-            callback(products, error)
-            return
             
             if error != nil{
                 callback(nil, error)
@@ -443,9 +430,45 @@ class Service: NSObject {
                 return
             }
             
-            var products1 = [Product]()
-            
+            var items = [MainToolBar]()
             if let array:NSArray = response?.content as? NSArray{
+                for productDic in array {
+                    let item = MainToolBar(dictionary: productDic as! NSDictionary)
+                    items.append(item)
+                }
+                
+                callback(items, nil)
+                return
+            }
+            
+            callback(nil, nil)
+            return
+        }
+    }
+    //MARK:- product
+    func browseProducts(searchObject:SearchParameters, callback:@escaping (_ products:[Product]?, _ error:MMError?) ->Void){
+        let token = TokenManager().getToken()
+        
+        let request = httpRequest.createAPIRequestWithAccessToken(accessToken: token as NSString!)
+        
+        request.path = "product/search/"
+        request.method = "GET"
+        
+        request.send { (response, error) in
+            
+            if error != nil{
+                callback(nil, error)
+                return
+            }
+            
+            if response?.statusCode != 200{
+                callback(nil, MMError(response: response))
+                return
+            }
+            
+            var products = [Product]()
+            let dic = response?.content as! NSDictionary
+            if let array:NSArray = dic["products"] as? NSArray{
                 for productDic in array {
                     let product = Product(dictionary: productDic as! NSDictionary)
                     products.append(product)

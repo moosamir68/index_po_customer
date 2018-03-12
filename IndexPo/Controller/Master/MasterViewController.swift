@@ -48,8 +48,10 @@ class MasterViewController: UIViewController {
     }
     
     func initUI(){
+        
     }
     
     func getData(){
+        
     }
 }

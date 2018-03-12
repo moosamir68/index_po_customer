@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrowseViewController" customModule="IndexPo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImagePlayerViewController" customModule="IndexPo" customModuleProvider="target">
             <connections>
-                <outlet property="boxView" destination="lcV-2L-Zyk" id="0m1-CQ-UaS"/>
-                <outlet property="mainScrollView" destination="VfQ-lL-Q7F" id="YLI-7o-eeZ"/>
+                <outlet property="boxView" destination="QHA-cx-3tv" id="ZQJ-H0-Fkn"/>
+                <outlet property="imageView" destination="vlY-xt-Jc2" id="MVT-1v-pi3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,31 +22,31 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcV-2L-Zyk">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHA-cx-3tv">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-lL-Q7F">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vlY-xt-Jc2">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        </scrollView>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="VfQ-lL-Q7F" firstAttribute="top" secondItem="lcV-2L-Zyk" secondAttribute="top" id="K4l-2E-Dze"/>
-                        <constraint firstAttribute="trailing" secondItem="VfQ-lL-Q7F" secondAttribute="trailing" id="Rsu-Pu-kCG"/>
-                        <constraint firstAttribute="bottom" secondItem="VfQ-lL-Q7F" secondAttribute="bottom" id="e7N-EV-t16"/>
-                        <constraint firstItem="VfQ-lL-Q7F" firstAttribute="leading" secondItem="lcV-2L-Zyk" secondAttribute="leading" id="raB-54-GiJ"/>
+                        <constraint firstItem="vlY-xt-Jc2" firstAttribute="leading" secondItem="QHA-cx-3tv" secondAttribute="leading" id="279-1W-dFI"/>
+                        <constraint firstAttribute="bottom" secondItem="vlY-xt-Jc2" secondAttribute="bottom" id="4YT-pZ-gmk"/>
+                        <constraint firstAttribute="trailing" secondItem="vlY-xt-Jc2" secondAttribute="trailing" id="QJ4-1F-LH2"/>
+                        <constraint firstItem="vlY-xt-Jc2" firstAttribute="top" secondItem="QHA-cx-3tv" secondAttribute="top" id="o5I-ya-vzI"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="lcV-2L-Zyk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5MY-ee-0hD"/>
-                <constraint firstItem="lcV-2L-Zyk" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="FT8-B9-KxS"/>
-                <constraint firstItem="lcV-2L-Zyk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PTT-Sh-jtB"/>
-                <constraint firstItem="lcV-2L-Zyk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TsC-cU-1rN"/>
+                <constraint firstItem="QHA-cx-3tv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1f0-jt-vGU"/>
+                <constraint firstItem="QHA-cx-3tv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9KV-PB-y7c"/>
+                <constraint firstItem="QHA-cx-3tv" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="uiM-Jv-tQN"/>
+                <constraint firstItem="QHA-cx-3tv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wDd-SY-gda"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="25.5" y="51.5"/>
+            <point key="canvasLocation" x="234" y="58"/>
         </view>
     </objects>
 </document>
