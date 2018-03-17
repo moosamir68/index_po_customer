@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BrowseMainGridViewController: UIViewController {
+class BrowseMainGridViewController: BrowseMasterCollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BrowseMainCollectionsViewController: UIViewController {
+class BrowseMainCollectionsViewController: BrowseMasterTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

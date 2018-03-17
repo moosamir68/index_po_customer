@@ -415,7 +415,7 @@ class Service: NSObject {
         let request = httpRequest.createAPIRequestWithAccessToken(accessToken: token as NSString!)
         
         request.baseURL = "www.mocky.io/v2"
-        request.path = "5aa6a11e3100005c3be71720"
+        request.path = "5aa77cde2f00006a148ea57b"
         request.method = "GET"
         
         request.send { (response, error) in
@@ -445,6 +445,172 @@ class Service: NSObject {
             return
         }
     }
+    
+    func getItemForBrowseMainHome(url:String?, callback:@escaping (_ items:[BrowseObject]?, _ error:MMError?) ->Void){
+        let token = TokenManager().getToken()
+        
+        let request = httpRequest.createAPIRequestWithAccessToken(accessToken: token as NSString!)
+        
+        request.baseURL = "www.mocky.io/v2"
+        if(url != nil){
+            request.path = url! as NSString
+        }else{
+            request.path = "5aa3b5e3310000d11126e2a9"
+        }
+        request.method = "GET"
+        
+        request.send { (response, error) in
+            
+            if error != nil{
+                callback(nil, error)
+                return
+            }
+            
+            if response?.statusCode != 200{
+                callback(nil, MMError(response: response))
+                return
+            }
+            
+            var items = [BrowseObject]()
+            if let array:NSArray = response?.content as? NSArray{
+                for itemDic in array {
+                    let item = BrowseObject.createCurrentObject(dictionary: itemDic as! NSDictionary)
+                    items.append(item!)
+                }
+                
+                callback(items, nil)
+                return
+            }
+            
+            callback(nil, nil)
+            return
+        }
+    }
+    
+    func getItemForBrowseMainCategories(url:String?, callback:@escaping (_ items:[BrowseCategory]?, _ error:MMError?) ->Void){
+        let token = TokenManager().getToken()
+        
+        let request = httpRequest.createAPIRequestWithAccessToken(accessToken: token as NSString!)
+        
+        request.baseURL = "www.mocky.io/v2"
+        if(url != nil){
+            request.path = url! as NSString
+        }else{
+            request.path = "5aa4f1d72e0000700aa403dd"
+        }
+        request.method = "GET"
+        
+        request.send { (response, error) in
+            
+            if error != nil{
+                callback(nil, error)
+                return
+            }
+            
+            if response?.statusCode != 200{
+                callback(nil, MMError(response: response))
+                return
+            }
+            
+            var items = [BrowseCategory]()
+            if let array:NSArray = response?.content as? NSArray{
+                for itemDic in array {
+                    let item = BrowseCategory(dictionary: itemDic as! NSDictionary)
+                    items.append(item)
+                }
+                
+                callback(items, nil)
+                return
+            }
+            
+            callback(nil, nil)
+            return
+        }
+    }
+    
+    func getItemForBrowseMainGrid(url:String?, callback:@escaping (_ items:[BrowseShowingItem]?, _ error:MMError?) ->Void){
+        let token = TokenManager().getToken()
+        
+        let request = httpRequest.createAPIRequestWithAccessToken(accessToken: token as NSString!)
+        
+        request.baseURL = "www.mocky.io/v2"
+        if(url != nil){
+            request.path = url! as NSString
+        }else{
+            request.path = "5aa4f06b2e0000100aa403db"
+        }
+        request.method = "GET"
+        
+        request.send { (response, error) in
+            
+            if error != nil{
+                callback(nil, error)
+                return
+            }
+            
+            if response?.statusCode != 200{
+                callback(nil, MMError(response: response))
+                return
+            }
+            
+            var items = [BrowseShowingItem]()
+            if let array:NSArray = response?.content as? NSArray{
+                for itemDic in array {
+                    let item = BrowseShowingItem(dictionary: itemDic as! NSDictionary)
+                    items.append(item)
+                }
+                
+                callback(items, nil)
+                return
+            }
+            
+            callback(nil, nil)
+            return
+        }
+    }
+    
+    func getItemForBrowseMainCollections(url:String?, callback:@escaping (_ items:[BrowseCollection]?, _ error:MMError?) ->Void){
+        let token = TokenManager().getToken()
+        
+        let request = httpRequest.createAPIRequestWithAccessToken(accessToken: token as NSString!)
+        
+        request.baseURL = "www.mocky.io/v2"
+        if(url != nil){
+            request.path = url! as NSString
+        }else{
+            request.path = "5aa51bdf2e0000390da4040a"
+        }
+        request.method = "GET"
+        
+        request.send { (response, error) in
+            
+            if error != nil{
+                callback(nil, error)
+                return
+            }
+            
+            if response?.statusCode != 200{
+                callback(nil, MMError(response: response))
+                return
+            }
+            
+            var items = [BrowseCollection]()
+            if let array:NSArray = response?.content as? NSArray{
+                for itemDic in array {
+                    let item = BrowseCollection(dictionary: itemDic as! NSDictionary)
+                    items.append(item)
+                }
+                
+                callback(items, nil)
+                return
+            }
+            
+            callback(nil, nil)
+            return
+        }
+    }
+    
+    
     //MARK:- product
     func browseProducts(searchObject:SearchParameters, callback:@escaping (_ products:[Product]?, _ error:MMError?) ->Void){
         let token = TokenManager().getToken()

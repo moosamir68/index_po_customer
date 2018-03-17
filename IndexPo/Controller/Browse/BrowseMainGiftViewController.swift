@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BrowseMainGiftViewController: UIViewController {
+class BrowseMainGiftViewController: BrowseMasterViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

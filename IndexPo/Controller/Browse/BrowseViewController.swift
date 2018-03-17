@@ -55,29 +55,29 @@ class BrowseViewController: MasterViewController {
     
     //MARK:- internal method
     private func initToolbarWithItems(){
-        self.mainScrollView.contentSize = CGSize(width: CGFloat((self.toolBarItems?.count)!) * self.boxView.frame.size.width, height: self.boxView.frame.size.height)
-        
+        let contentSize = CGSize(width: CGFloat((self.toolBarItems?.count)!) * self.boxView.frame.size.width, height: 0.0)
+        self.mainScrollView.contentSize = contentSize
         for itemToolBar in self.toolBarItems!{
             switch itemToolBar.type {
             case 1:
                 let home = BrowseMainHomeViewController()
-                self.addChildViewController(home)
+                self.addControllerToParentOnScrollView(controller: home)
                 break
             case 2:
                 let categories = BrowseMainCategoriesViewController()
-                self.addChildViewController(categories)
+                self.addControllerToParentOnScrollView(controller: categories)
                 break
             case 3:
                 let grid = BrowseMainGridViewController()
-                self.addChildViewController(grid)
+                self.addControllerToParentOnScrollView(controller: grid)
                 break
             case 4:
                 let collections = BrowseMainCollectionsViewController()
-                self.addChildViewController(collections)
+                self.addControllerToParentOnScrollView(controller: collections)
                 break
             case 5:
                 let gift = BrowseMainGiftViewController()
-                self.addChildViewController(gift)
+                self.addControllerToParentOnScrollView(controller: gift)
                 break
                 
             default:
@@ -87,22 +87,24 @@ class BrowseViewController: MasterViewController {
     }
     
     //MARK:- add controller to parent
-    private func addControllerToParentOnScrollView(controller:MasterViewController){
+    private func addControllerToParentOnScrollView(controller:UIViewController){
         let currentChild:UIViewController? = self.childViewControllers.last
         self.addChildViewController(controller)
         self.mainScrollView.addSubview(controller.view)
+        controller.didMove(toParentViewController: self)
+        
         controller.view.snp.makeConstraints { (make) in
-            make.top.equalToSuperview()
-            make.bottom.equalToSuperview()
-            make.width.equalToSuperview()
+            make.top.equalTo(self.mainScrollView.snp.top)
             if(currentChild != nil){
-                make.left.equalTo((currentChild?.view.snp.trailing)!)
+                make.leading.equalTo((currentChild?.view.snp.trailing)!)
             }else{
-                make.left.equalToSuperview()
+                make.leading.equalTo(self.mainScrollView.snp.leading)
             }
+            
+            make.width.equalTo(self.mainScrollView.frame.size.width)
+            make.height.equalTo(self.mainScrollView.frame.size.height)
         }
         
-        controller.willMove(toParentViewController: self)
     }
     
     private func addItemToToolBarMenu(toolBarItem:MainToolBar){

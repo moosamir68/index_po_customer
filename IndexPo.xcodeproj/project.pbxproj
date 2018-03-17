@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E16ED9D2057B5AD00207938 /* BrowseSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16ED9C2057B5AD00207938 /* BrowseSlider.swift */; };
+		6E16ED9F2057B5FF00207938 /* BrowsePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16ED9E2057B5FF00207938 /* BrowsePair.swift */; };
+		6E16EDA12057B66A00207938 /* BrowseBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16EDA02057B66A00207938 /* BrowseBanner.swift */; };
+		6E16EDA32057B68200207938 /* BrowseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16EDA22057B68200207938 /* BrowseCollection.swift */; };
+		6E16EDA52057B6D700207938 /* BrowseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16EDA42057B6D700207938 /* BrowseObject.swift */; };
+		6E16EDA72057F08000207938 /* BrowseShowingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16EDA62057F08000207938 /* BrowseShowingItem.swift */; };
+		6E16EDA92057F71E00207938 /* BrowseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16EDA82057F71E00207938 /* BrowseCategory.swift */; };
+		6E16EDAC2057FD0D00207938 /* BrowseMasterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16EDAA2057FD0D00207938 /* BrowseMasterCollectionViewController.swift */; };
+		6E16EDAF2057FD2A00207938 /* BrowseMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16EDAE2057FD2A00207938 /* BrowseMasterTableViewController.swift */; };
+		6E16EDB12057FD3700207938 /* BrowseMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16EDB02057FD3700207938 /* BrowseMasterViewController.swift */; };
+		6E1BB5DA20594805001C3A5B /* BrowseImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1BB5D820594805001C3A5B /* BrowseImageViewController.swift */; };
+		6E1BB5DB20594805001C3A5B /* BrowseImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1BB5D920594805001C3A5B /* BrowseImageViewController.xib */; };
+		6E1BB5DE2059552C001C3A5B /* BrowseShowingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1BB5DC2059552C001C3A5B /* BrowseShowingCollectionViewCell.swift */; };
+		6E1BB5DF2059552C001C3A5B /* BrowseShowingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1BB5DD2059552C001C3A5B /* BrowseShowingCollectionViewCell.xib */; };
 		6E2DD90F2029DF2C00AC2FA0 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2DD90D2029DF2C00AC2FA0 /* BrowseViewController.swift */; };
 		6E2DD9102029DF2C00AC2FA0 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E2DD90E2029DF2C00AC2FA0 /* BrowseViewController.xib */; };
 		6E2DD9142029ECB000AC2FA0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2DD9122029ECB000AC2FA0 /* HomeViewController.swift */; };
@@ -120,6 +134,20 @@
 /* Begin PBXFileReference section */
 		6880EAEEC42D35673B22EB11 /* Pods_IndexPo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IndexPo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C61C222D8E11244F546E261 /* Pods-IndexPo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndexPo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndexPo/Pods-IndexPo.debug.xcconfig"; sourceTree = "<group>"; };
+		6E16ED9C2057B5AD00207938 /* BrowseSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseSlider.swift; sourceTree = "<group>"; };
+		6E16ED9E2057B5FF00207938 /* BrowsePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePair.swift; sourceTree = "<group>"; };
+		6E16EDA02057B66A00207938 /* BrowseBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBanner.swift; sourceTree = "<group>"; };
+		6E16EDA22057B68200207938 /* BrowseCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCollection.swift; sourceTree = "<group>"; };
+		6E16EDA42057B6D700207938 /* BrowseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseObject.swift; sourceTree = "<group>"; };
+		6E16EDA62057F08000207938 /* BrowseShowingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseShowingItem.swift; sourceTree = "<group>"; };
+		6E16EDA82057F71E00207938 /* BrowseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCategory.swift; sourceTree = "<group>"; };
+		6E16EDAA2057FD0D00207938 /* BrowseMasterCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseMasterCollectionViewController.swift; sourceTree = "<group>"; };
+		6E16EDAE2057FD2A00207938 /* BrowseMasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseMasterTableViewController.swift; sourceTree = "<group>"; };
+		6E16EDB02057FD3700207938 /* BrowseMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseMasterViewController.swift; sourceTree = "<group>"; };
+		6E1BB5D820594805001C3A5B /* BrowseImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseImageViewController.swift; sourceTree = "<group>"; };
+		6E1BB5D920594805001C3A5B /* BrowseImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowseImageViewController.xib; sourceTree = "<group>"; };
+		6E1BB5DC2059552C001C3A5B /* BrowseShowingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseShowingCollectionViewCell.swift; sourceTree = "<group>"; };
+		6E1BB5DD2059552C001C3A5B /* BrowseShowingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowseShowingCollectionViewCell.xib; sourceTree = "<group>"; };
 		6E2DD90D2029DF2C00AC2FA0 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		6E2DD90E2029DF2C00AC2FA0 /* BrowseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowseViewController.xib; sourceTree = "<group>"; };
 		6E2DD9122029ECB000AC2FA0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -269,6 +297,8 @@
 				6E6653A62056B95900B015AF /* BrowseMainGridViewController.xib */,
 				6E6653A92056B97500B015AF /* BrowseMainCollectionsViewController.swift */,
 				6E6653AA2056B97500B015AF /* BrowseMainCollectionsViewController.xib */,
+				6E6653BF2056DB9C00B015AF /* BrowseMainGiftViewController.swift */,
+				6E6653C02056DB9C00B015AF /* BrowseMainGiftViewController.xib */,
 				6E6653AD2056B98C00B015AF /* BrowseSliderViewController.swift */,
 				6E6653AE2056B98C00B015AF /* BrowseSliderViewController.xib */,
 				6E6653B12056B9AE00B015AF /* BrowsePairProductViewController.swift */,
@@ -277,8 +307,11 @@
 				6E6653B62056B9C800B015AF /* BrowseBannerViewController.xib */,
 				6E6653B92056B9DA00B015AF /* BrowseCollectionViewController.swift */,
 				6E6653BA2056B9DA00B015AF /* BrowseCollectionViewController.xib */,
-				6E6653BF2056DB9C00B015AF /* BrowseMainGiftViewController.swift */,
-				6E6653C02056DB9C00B015AF /* BrowseMainGiftViewController.xib */,
+				6E16EDAA2057FD0D00207938 /* BrowseMasterCollectionViewController.swift */,
+				6E16EDAE2057FD2A00207938 /* BrowseMasterTableViewController.swift */,
+				6E16EDB02057FD3700207938 /* BrowseMasterViewController.swift */,
+				6E1BB5D820594805001C3A5B /* BrowseImageViewController.swift */,
+				6E1BB5D920594805001C3A5B /* BrowseImageViewController.xib */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -475,6 +508,13 @@
 				6E4917B92029C99700D63368 /* SearchParameters.swift */,
 				6EB20628202C4A3A00DBA450 /* BaseObject.swift */,
 				6E6653BD2056D0F300B015AF /* MainToolBar.swift */,
+				6E16ED9C2057B5AD00207938 /* BrowseSlider.swift */,
+				6E16ED9E2057B5FF00207938 /* BrowsePair.swift */,
+				6E16EDA02057B66A00207938 /* BrowseBanner.swift */,
+				6E16EDA22057B68200207938 /* BrowseCollection.swift */,
+				6E16EDA42057B6D700207938 /* BrowseObject.swift */,
+				6E16EDA62057F08000207938 /* BrowseShowingItem.swift */,
+				6E16EDA82057F71E00207938 /* BrowseCategory.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -551,6 +591,8 @@
 				6E8F29D820540ACB0040D78C /* ProductTableViewCellVideo.xib */,
 				6EB2061F202AE86B00DBA450 /* ProductTableViewCellImage.swift */,
 				6EB20620202AE86B00DBA450 /* ProductTableViewCellImage.xib */,
+				6E1BB5DC2059552C001C3A5B /* BrowseShowingCollectionViewCell.swift */,
+				6E1BB5DD2059552C001C3A5B /* BrowseShowingCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -700,6 +742,7 @@
 				6EFA9D5C20270E2400D5A1DC /* DoneButton.xib in Resources */,
 				6EFA9D5E20270E2400D5A1DC /* SelectableInputImage.xib in Resources */,
 				6EFA9D6020270E2400D5A1DC /* InputShowImage.xib in Resources */,
+				6E1BB5DF2059552C001C3A5B /* BrowseShowingCollectionViewCell.xib in Resources */,
 				6EFA9D6220270E2400D5A1DC /* InputView.xib in Resources */,
 				6EB20622202AE86B00DBA450 /* ProductTableViewCellImage.xib in Resources */,
 				6EFA9D6420270E2400D5A1DC /* SelectableMenu.xib in Resources */,
@@ -710,6 +753,7 @@
 				6EFA9D6920270E2400D5A1DC /* IRANSansMobileMultiLineFaNum-Light.ttf in Resources */,
 				6E8F29D2205400C50040D78C /* GifPlayerViewController.xib in Resources */,
 				6E8F29CE2053E8BE0040D78C /* VideoPlayerViewController.xib in Resources */,
+				6E1BB5DB20594805001C3A5B /* BrowseImageViewController.xib in Resources */,
 				6EFA9D6B20270E2400D5A1DC /* splash_animation.gif in Resources */,
 				6E8F29DA20540ACB0040D78C /* ProductTableViewCellVideo.xib in Resources */,
 				6EFA9D6C20270E2400D5A1DC /* Assets.xcassets in Resources */,
@@ -836,24 +880,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E16EDA72057F08000207938 /* BrowseShowingItem.swift in Sources */,
 				6E6653BE2056D0F300B015AF /* MainToolBar.swift in Sources */,
 				6E8F29D920540ACB0040D78C /* ProductTableViewCellVideo.swift in Sources */,
 				6EFA9DB220270E3600D5A1DC /* ProductCollectionViewCell.swift in Sources */,
 				6EFA9DBC20270E3600D5A1DC /* ProductsViewController.swift in Sources */,
+				6E16EDAC2057FD0D00207938 /* BrowseMasterCollectionViewController.swift in Sources */,
 				6E4917B32029BE8100D63368 /* CartItem.swift in Sources */,
 				6EFA9DC020270E3600D5A1DC /* ProductViewController.swift in Sources */,
+				6E16EDA92057F71E00207938 /* BrowseCategory.swift in Sources */,
 				6EFA9DC420270E3600D5A1DC /* LoadingViewController.swift in Sources */,
 				6EFA9DCE20270E3600D5A1DC /* ProfileViewController.swift in Sources */,
 				6EFA9DD220270E3600D5A1DC /* MasterTableViewController.swift in Sources */,
+				6E16EDA32057B68200207938 /* BrowseCollection.swift in Sources */,
 				6E6653AB2056B97500B015AF /* BrowseMainCollectionsViewController.swift in Sources */,
 				6E2DD9142029ECB000AC2FA0 /* HomeViewController.swift in Sources */,
 				6E2DD9182029EE0F00AC2FA0 /* MasterCollectionViewController.swift in Sources */,
 				6EB20621202AE86B00DBA450 /* ProductTableViewCellImage.swift in Sources */,
 				6EFA9DD320270E3600D5A1DC /* MainNavigationController.swift in Sources */,
 				6EFA9DD420270E3600D5A1DC /* MainTabBarController.swift in Sources */,
+				6E16EDAF2057FD2A00207938 /* BrowseMasterTableViewController.swift in Sources */,
 				6EFA9DD520270E3600D5A1DC /* MasterViewController.swift in Sources */,
 				6EFA9DD620270E3600D5A1DC /* SpecialOffersCollectionViewCell.swift in Sources */,
 				6EFA9DD820270E3600D5A1DC /* SpecialOffersViewController.swift in Sources */,
+				6E16EDB12057FD3700207938 /* BrowseMasterViewController.swift in Sources */,
 				6E4917B72029BF6800D63368 /* CartTableViewCell.swift in Sources */,
 				6E6653B72056B9C800B015AF /* BrowseBannerViewController.swift in Sources */,
 				6EFA9DDE20270E3600D5A1DC /* SpecialOfferViewController.swift in Sources */,
@@ -871,23 +921,29 @@
 				6EFA9DFE20270E3700D5A1DC /* InputView.swift in Sources */,
 				6E6653AF2056B98C00B015AF /* BrowseSliderViewController.swift in Sources */,
 				6E2DD90F2029DF2C00AC2FA0 /* BrowseViewController.swift in Sources */,
+				6E1BB5DE2059552C001C3A5B /* BrowseShowingCollectionViewCell.swift in Sources */,
 				6EFA9E0020270E3700D5A1DC /* SelectableMenu.swift in Sources */,
 				6EB20629202C4A3A00DBA450 /* BaseObject.swift in Sources */,
 				6E6653C12056DB9C00B015AF /* BrowseMainGiftViewController.swift in Sources */,
 				6EFA9E0220270E3700D5A1DC /* ShowPhoneNumber.swift in Sources */,
 				6E6653A72056B95900B015AF /* BrowseMainGridViewController.swift in Sources */,
 				6EFA9E0420270E3700D5A1DC /* AppDelegate.swift in Sources */,
+				6E16ED9F2057B5FF00207938 /* BrowsePair.swift in Sources */,
 				6EFA9E0720270E3700D5A1DC /* UIUtility.swift in Sources */,
 				6EFA9E0A20270E3700D5A1DC /* Extentions.swift in Sources */,
 				6EFA9E0E20270E3700D5A1DC /* CacheManager.swift in Sources */,
+				6E16ED9D2057B5AD00207938 /* BrowseSlider.swift in Sources */,
 				6EFA9E0F20270E3700D5A1DC /* UserDefaults.swift in Sources */,
+				6E16EDA52057B6D700207938 /* BrowseObject.swift in Sources */,
 				6EFA9E1020270E3700D5A1DC /* TokenManager.swift in Sources */,
 				6EFA9E1220270E3700D5A1DC /* Account.swift in Sources */,
 				6EFA9E1620270E3700D5A1DC /* Product.swift in Sources */,
 				6EFA9E1720270E3700D5A1DC /* SpecialOffer.swift in Sources */,
 				6E6653A32056B94400B015AF /* BrowseMainCategoriesViewController.swift in Sources */,
 				6EFA9E1820270E3700D5A1DC /* CustomDate.swift in Sources */,
+				6E16EDA12057B66A00207938 /* BrowseBanner.swift in Sources */,
 				6EFA9E1920270E3700D5A1DC /* Color.swift in Sources */,
+				6E1BB5DA20594805001C3A5B /* BrowseImageViewController.swift in Sources */,
 				6E8F29D1205400C50040D78C /* GifPlayerViewController.swift in Sources */,
 				6E4917BA2029C99700D63368 /* SearchParameters.swift in Sources */,
 				6EFA9E1B20270E3700D5A1DC /* HttpsManager.swift in Sources */,

@@ -43,7 +43,6 @@ class MasterViewController: UIViewController {
         
         self.view.backgroundColor = UIUtility.colorRootView()
         
-        self.initUI()
         self.getData()
     }
     

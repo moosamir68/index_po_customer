@@ -1,17 +1,17 @@
 //
-//  BrowseBannerViewController.swift
+//  BrowseImageViewController.swift
 //  IndexPo
 //
-//  Created by Moosa Mir on 3/12/18.
+//  Created by Moosa Mir on 3/14/18.
 //  Copyright © 2018 Noxel. All rights reserved.
 //
 
 import UIKit
 
-class BrowseBannerViewController: BrowseMasterViewController {
-    var banner = BrowseBanner()
-    
-    @IBOutlet var BannerImageView: UIImageView!
+class BrowseImageViewController:  BrowseMasterViewController{
+
+    @IBOutlet var imageView: UIImageView!
+    var imageUrlString:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,8 @@ class BrowseBannerViewController: BrowseMasterViewController {
     
     //MARK:- initUI
     internal override func initUI() {
-        let url = URL(string: self.banner.image)
-        self.BannerImageView.kf.setImage(with: url)
+        let url = URL(string: self.imageUrlString!)
+        self.imageView.kf.setImage(with: url)
     }
 
 }
